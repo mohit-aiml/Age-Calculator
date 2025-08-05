@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Age Calculator - Time Portal</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Animated background particles -->
+    <div class="particles">
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+        <div class="particle"></div>
+    </div>
+    
+    <div class="container">
+        <!-- Header with icon -->
+        <div class="header">
+            <div class="logo">⏰</div>
+            <h1>Age Calculator</h1>
+            <p class="subtitle">Discover the journey of your time</p>
+        </div>
+        
+        <!-- Enhanced input section -->
+        <div class="input-container">
+            <div class="input-group">
+                <label for="dob">
+                    <span class="icon">🎂</span>
+                    Enter your date of birth
+                </label>
+                <div class="input-wrapper">
+                    <input type="date" id="dob" name="dob" placeholder="Select your birth date">
+                    <div class="input-glow"></div>
+                </div>
+            </div>
+            <button onclick="calculateAge()" class="calculate-btn">
+                <span class="btn-text">Calculate Age</span>
+                <div class="btn-particles">
+                    <div class="btn-particle"></div>
+                    <div class="btn-particle"></div>
+                    <div class="btn-particle"></div>
+                </div>
+            </button>
+        </div>
+        
+        <!-- Enhanced result display -->
+        <div class="result-container">
+            <div class="result" id="result">
+                <div class="result-placeholder">
+                    <span class="placeholder-icon">✨</span>
+                    <p>Your age will appear here...</p>
+                </div>
+            </div>
+            
+            <!-- Age breakdown cards -->
+            <div class="age-cards" id="ageCards" style="display: none;">
+                <div class="age-card years-card">
+                    <div class="card-icon">📅</div>
+                    <div class="card-number" id="yearsCount">0</div>
+                    <div class="card-label">Years</div>
+                </div>
+                <div class="age-card months-card">
+                    <div class="card-icon">🌙</div>
+                    <div class="card-number" id="monthsCount">0</div>
+                    <div class="card-label">Months</div>
+                </div>
+                <div class="age-card days-card">
+                    <div class="card-icon">☀️</div>
+                    <div class="card-number" id="daysCount">0</div>
+                    <div class="card-label">Days</div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Enhanced clocks section -->
+        <div class="clocks-section">
+            <h3 class="section-title">Time Portals</h3>
+            <div class="clocks">
+                <div class="clock-container">
+                    <div class="clock">
+                        <div class="clock-face">
+                            <div class="clock-number twelve">12</div>
+                            <div class="clock-number three">3</div>
+                            <div class="clock-number six">6</div>
+                            <div class="clock-number nine">9</div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <div class="clock-label">Present</div>
+                </div>
+                <div class="clock-container">
+                    <div class="clock">
+                        <div class="clock-face">
+                            <div class="clock-number twelve">12</div>
+                            <div class="clock-number three">3</div>
+                            <div class="clock-number six">6</div>
+                            <div class="clock-number nine">9</div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <div class="clock-label">Future +2h</div>
+                </div>
+                <div class="clock-container">
+                    <div class="clock">
+                        <div class="clock-face">
+                            <div class="clock-number twelve">12</div>
+                            <div class="clock-number three">3</div>
+                            <div class="clock-number six">6</div>
+                            <div class="clock-number nine">9</div>
+                            <div class="clock-center"></div>
+                        </div>
+                    </div>
+                    <div class="clock-label">Future +4h</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
